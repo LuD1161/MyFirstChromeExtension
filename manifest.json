@@ -1,0 +1,25 @@
+{
+	"manifest_version": 2,
+	"name":"My First Extension",
+	"version":"1.0",
+	"incognito":"spanning",
+
+	"content_scripts":[
+		{
+			"matches":[
+				"<all_urls>"
+			],
+			"js":["jquery-3.1.1.js","content.js"]
+		}
+	],
+
+	"browser_action": {
+  "default_icon": "blackLeaf.png",
+	"default_popup": "popup.html",
+	"default_title": "Yes ! This is it ! My First Extension"
+},
+
+	"background":{
+		"scripts":["background.js"]
+	}
+}

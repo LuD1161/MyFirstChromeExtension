@@ -1,0 +1,36 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>My First Extension</title>
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+        background: #DFE2DB;
+      }
+      #status {
+        /* avoid an excessively wide status text */
+        white-space: pre;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 600px;
+      }
+      @font-face {
+          font-family: "MyCustomFont";
+          src: url("calli.ttf");
+      }
+    </style>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <div><b style="font-family:MyCustomFont; font-size:40px">Created By LuD1161</b></div>
+    <hr>
+
+    <div>Nature graphic by <a href="http://www.flaticon.com/authors/freepik">Freepik</a> from <a href="http://www.flaticon.com/">Flaticon</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>. Made with <a href="http://logomakr.com" title="Logo Maker">Logo Maker</a></div>
+  </body>
+</html>
