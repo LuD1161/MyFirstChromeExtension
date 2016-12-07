@@ -19,9 +19,4 @@ function updateIcon() {
     chrome.browserAction.setIcon({path:"blackLeaf.png"});
     set = true;
   }
-  // chrome.browserAction.setPopup({
-  //       popup: "popup.html"
-  //   });
 }
-
-// chrome.browserAction.onClicked.addListener(updateIcon);
